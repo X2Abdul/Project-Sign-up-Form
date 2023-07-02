@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.leftSide{
+    display: flex;
+    height: 100vh;
+    width: 40vw;
+    
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    width: 23.8vw;
+    height: 15vh;
+    justify-content: center;
+    position: absolute;
+    top: 20vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    padding: 0;
+}
+.leftSideFooter{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    width: 456px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F9FAFB;
+    height: 100vh;
+}
+
+.titleText{
+    color: white;
+    font-family: Norse;
+    font-size: 4rem;
+}
+
+.header, .form, .footer{
+    padding-left: 40px;
+}
+.header{
+    background-color: #F9FAFB;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 1.5rem;
+
+}
+.form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    font-family: Arial;
+}
+
+.form legend{
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+.footer,.footerBtnDiv{
+    font-family: Arial;
+    background-color: #F9FAFB;
+}
+
+.submitBtn{
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    transition-duration: 0.4s;
+    background-color: #596D48;
+    color: white;
+    font-size: large;
+}
+.submitBtn:hover{
+    cursor: pointer;
+    background-color: lightgreen;
+    color: black;
+    font-weight: bolder;
+}
+.allInputs {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+}
+
+
+.input{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 10px;
+    width: 200px;
+}
+
+.input input{
+    border-radius: 5px;
+    height: 25px;
+    background-color: #E5E7EB;
+    outline: none;
+    font-size: large;
+    border: 2px solid #000;
+    transition-duration: 0.4s;
+}
+
+.input input:empty{
+    border-color: black;
+}
+
+.input input:valid{
+    border-color: green;
+}
+
